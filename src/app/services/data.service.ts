@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import{Http} from '@angular/http';
 import {createTestTemperature} from '../sensor-test';
+import {peltierOn} from '../sensor-test';
+import {peltierOff} from '../sensor-test';
 import {Temperatura} from '../model';
 
 
@@ -10,6 +12,8 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class DataService {
     private temperaturesUrl = 'api/temperaturas';
+    private OnUrl = 'api/peltierOn/';
+    private OffUrl = 'api/peltierOff/';
 
     constructor(private http:Http){}
 
@@ -38,8 +42,9 @@ export class DataService {
     }
 
 
-    getTemperatura(url:string):Promise<Temperatura>{
-        return this.http.get(url)
+    getTemperatura(id:number,isOn:boolean):Promise<Temperatura>{
+        let url = isOn? this.OnUrl: this.OffUrl;
+        return this.http.get(url+id)
             .toPromise()
             .then(response => {
                

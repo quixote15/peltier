@@ -32,13 +32,13 @@
         <div id="left" class="termometro">
          
             <div class="container">
-                   <h3 class="tempTitle">Voltagem 2.4V</h3>
+                   <h3 id="titleAmb" ng-model="temperatura.corrente">Voltagem {{temperatura.corrente}}V</h3>
                 <div class="de">
                     <div class="den">
                     <div class="dene">
                         <div class="denem">
-                        <div class="deneme">
-                            -6<span>.9</span><strong>&deg;</strong>
+                        <div class="deneme" ng-model="temperatura" ng-show="updateTemperatura()" >
+                            -{{temperatura.temperatura[0]}}<span>.{{temperatura.temperatura[2]}}</span><strong>&deg;</strong>
                         </div>
                         </div>
                     </div>
@@ -51,9 +51,9 @@
             <div class="content">
                 
                 <ul>
-                    <li>Limite superior -7</li>
-                    <li>Temperatura Ideal -6</li>
-                    <li>Limite Inferior -5&deg;</li>
+                    <button (click)="toggle()" ng-model="buttonMessage">{{buttonMessage}}</button>
+                    <li ng-if="isFreezing" ng-model="termoMessage">{{termoMessage}}</li>
+                   
                 </ul>
             </div>
 
@@ -62,7 +62,7 @@
 
             
         <div id="right" class="tempAmbiente">
-            <h3 id="titleAmb">Voltagem 3.1V</h3>
+            <h3 id="titleAmb" >Temperatura Ambiente</h3>
             <div class="container">
                 <div class="de">
                     <div class="den">
@@ -79,6 +79,7 @@
 
             <div class="content">
                 <ul>
+                    
                     <li>Limite superior -7</li>
                     <li>Temperatura Ideal -6</li>
                     <li>Limite Inferior -5&deg;</li>

@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
  
 })
 export class NivelComponent implements OnInit {
+
+    totalCopos:number = 1;
+    valorCopo = 500; //um copo === 500 ml
+
     constructor() { }
 
     ngOnInit() { }
+
+
+    nivelCalcutations(){
+
+    }
 }
