@@ -1,8 +1,68 @@
 <div class="temp-info">
+    
+
+    <div class="introduction">
+
+        <h1>Nesta área mostramos a temperatura de sua cerveja e a temperatura ambiente</h1>
+        <p>Existem dois termometros digitais que mede a temperatura dentro do baril onde sua cerveja está! Além da temperatura também mostramos a voltagem que nosso equipamento precisa para refrigerar sua cerveja! </p>
+        <img id="imgCenter" [src]="twoImage">
+        <div class="tutorial">
+            <div class="intro">
+                 <h3> O primeiro termometro da esquerda faz a medição da temperatura de sua cerveja para que ela esteja sempre gelada.</h3>
+                 <img [src]="beerImage" >
+                 <h1>Termometro de cerveja</h1>
+            </div>
+           
+            <div class="intro2">
+                 <h3>O segundo termometro mostra a temperatura ambiente fora do barril de cerveja.</h3>
+                 <img [src]="tempImage" >
+                 <h1>Termometro Ambiente</h1>
+
+            </div>
+              
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
     <div class="row">
 
     
         <div id="left" class="termometro">
+         
+            <div class="container">
+                   <h3 class="tempTitle">Voltagem 2.4V</h3>
+                <div class="de">
+                    <div class="den">
+                    <div class="dene">
+                        <div class="denem">
+                        <div class="deneme">
+                            -6<span>.9</span><strong>&deg;</strong>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="content">
+                
+                <ul>
+                    <li>Limite superior -7</li>
+                    <li>Temperatura Ideal -6</li>
+                    <li>Limite Inferior -5&deg;</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+            
+        <div id="right" class="tempAmbiente">
+            <h3 id="titleAmb">Voltagem 3.1V</h3>
             <div class="container">
                 <div class="de">
                     <div class="den">
@@ -16,17 +76,17 @@
                     </div>
                 </div>
             </div>
+
+            <div class="content">
+                <ul>
+                    <li>Limite superior -7</li>
+                    <li>Temperatura Ideal -6</li>
+                    <li>Limite Inferior -5&deg;</li>
+                </ul>
+            </div>
         </div>
 
-
-        <div id="right" class="content">
-            <ul>
-                <li>Limite superior -7</li>
-                <li>Temperatura Ideal -6</li>
-                <li>Limite Inferior -5&deg;</li>
-            </ul>
-        </div>
 
         <div class="clear"></div>
-    </div>
+    
 </div>

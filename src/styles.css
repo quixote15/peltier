@@ -4,6 +4,15 @@ h1 {
   font-size: 250%;
 }
 
+h3{
+    color: #369;
+}
+
+p{
+  font-size: 22px;
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;

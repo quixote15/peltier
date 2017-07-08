@@ -48,6 +48,18 @@ body {
     line-height: 50px;
     font-size: 1.4em;
   }
+
+  
+.border{
+    margin-top: 5%;
+    height: 2px;
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
  
   /* Option 1 - Display Inline */
   .nav li {

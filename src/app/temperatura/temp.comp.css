@@ -2,7 +2,7 @@
 html, body { height: 100%; }
 body { background: #f2f2f2; }
 
-.container { width: 25%; margin: 10px  ; }
+.container { width: 50%; margin:0; }
 .de .den, .de .dene, .de .denem, .de .deneme { position: absolute;  left: 50%; top: 50%; }
 .de {
     position: relative;
@@ -65,28 +65,75 @@ body { background: #f2f2f2; }
 .deneme span { font-size: 30px; font-weight: 200; }
 .deneme strong { position: absolute; right: 10px; top: 25px; font-size: 34px; }
 
+.termometro{
+    padding-left: 20%;
+  
+}
 
+.tempAmbiente{
+   padding-left: 10%;
 
+}
 
+.tempTitle{
+    text-align: right;
+}
 #left{
-    width: 200px;
+    width: 30%;
     float: left;
 }
 
 #right{
-    margin-left: 200px;
+    width: 30%;
+    float: left;
 }
 
+#titleAmb{
+    position: relative;
+    left: 50px;
+}
 .clear{
-    clear:both;
+    display: block;
+
 }
 
-.content{
-    padding: 10%;
-    
+.clear:after{
+    content: "";
+    display: block;
+    height:0;
+    clear:both;
+    float:none;
+    visibility:hidden;
+    overflow:hidden;
+}
+
+.introduction{
+    margin: 5%;
 }
 
 .row{
     margin-top: 20%;
-    background-color: white;
+
+}
+
+#imgCenter{
+    display: block;
+    margin: 0 auto;
+}
+
+.tutorial{
+    width: 80%;
+    margin: 5% auto;
+}
+
+.intro{
+    margin-left:10%;
+    width: 30%;
+    float: left;
+}
+
+.intro2{
+    margin-left:15%;
+    width: 30%;
+    float:left;
 }
