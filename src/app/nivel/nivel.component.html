@@ -11,4 +11,15 @@
         <button (click)="nivelCalcutations()">Get My Beer!</button>
     </div>
 
+    <div class="showNivel" ng-if="totalCopos > 0">
+        <fieldset>
+            <p ng-model="litros">Ainda restam {{litros}} litros de cerveja!</p>
+            <br/>
+           Em quantos centimetros está o a cerveja: <h3 ng-model="nivelBaril">{{nivelBaril}}</h3>
+        </fieldset>
+        <fieldset>
+            Vazão: <h3 ng-model="vazao">{{vazao}}</h3>
+            <p ng-model="totalCopos">Seus {{totalCopos}} copos de cerveja foram enchidos em {{tempo}} segundos</p>
+        </fieldset>
+    </div>
 </div>
